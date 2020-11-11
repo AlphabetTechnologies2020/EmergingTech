@@ -1,3 +1,15 @@
+/* Navbar Media */
+@media (max-width: 768px) {
+	.navbar:not(.top-nav-collapse) {
+	  background-color: rgb(12, 88, 136);
+	}
+  }
+@media (min-width: 800px) and (max-width: 850px) {
+	.navbar:not(.top-nav-collapse) {
+	  background-color: rgb(12, 88, 136);
+	}
+}
+
 html,
 body,
 header,
@@ -75,18 +87,6 @@ body{
   background-color: rgb(12, 88, 136);
 }
 
-/* Navbar Media */
-@media (max-width: 768px) {
-  .navbar:not(.top-nav-collapse) {
-	background-color: rgb(12, 88, 136);
-  }
-}
-@media (min-width: 800px) and (max-width: 850px) {
-  .navbar:not(.top-nav-collapse) {
-	background-color: rgb(12, 88, 136);
-  }
-}
-
 /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
 .icon-bar {
 	position: fixed;
@@ -108,36 +108,22 @@ body{
   
   /* Style the social media icons with color, if you want */
   .icon-bar a:hover {
-	background-color: #000;
+	background-color: #fff;
+	color: #000;
+	box-shadow: 0 10px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   }
   
-  .facebook {
+.facebook {
 	background: #3B5998;
-	color: white;
-  }
-  
-  .twitter {
-	background: #55ACEE;
-	color: white;
-  }
-  
-  .google {
-	background: #dd4b39;
-	color: white;
-  }
-  
-  .linkedin {
-	background: #007bb5;
-	color: white;
-  }
-  
-  .youtube {
-	background: #bb0000;
-	color: white;
-  }
+}
+.linkedin {
+	background: #0077B5;
+}
+.twitter {
+	background: #1DA1F2;
+}
 
-
-/* Blog-Posts */
+/* Blog-Posts-Thumbnail*/
 .background{
 	width: 88%;
 	background-color: rgb(255, 255, 255);
@@ -184,13 +170,6 @@ img, embed, object, video {
 
 .blog-post-meta {
 	padding: 1em;
-}
-
-.blog-post-category {
-	color: #5b5c5c;
-	font-size: 12px;
-	letter-spacing: 0.2em;
-	text-transform: uppercase;
 }
 
 .blog-post-title {
