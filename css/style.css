@@ -55,10 +55,13 @@ body{
 	margin-left: 65%;
 }
 
+.top-bar > ul > a{
+	margin-left: -10px !important;
+}
 .date, .signin{
   color: white !important;
   text-decoration: none !important;
-  font-size: 10px;
+  font-size: 12px;
   width: 120px;
   padding: 5px 5px;
 }
@@ -114,20 +117,20 @@ body{
   }
   
 .facebook {
-	background: #3B5998;
+	background: #4867AA;
 }
 .linkedin {
 	background: #0077B5;
 }
 .twitter {
-	background: #1DA1F2;
+	background: #00709C;
 }
 
 /* Blog-Posts-Thumbnail*/
 .background{
 	width: 88%;
 	background-color: rgb(255, 255, 255);
-	margin: -120px auto 0 auto;
+	margin: -120px auto 25px auto;
 	padding: 30px 0;
 	box-shadow: 0 10px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
