@@ -204,7 +204,7 @@ footer{
 
 footer > span{
 	border-right: 2px solid;
-	margin: 0 5px;
+	margin: 0 5px 0 3px;
 }
 
 footer a:hover{
