@@ -196,3 +196,18 @@ img, embed, object, video {
 	text-decoration: underline;
 }
 
+/* Footer */
+footer{
+	height: 100px !important;
+	padding-left: 40px;
+}
+
+footer > span{
+	border-right: 2px solid;
+	margin: 0 5px;
+}
+
+footer a:hover{
+	color: rgb(12, 88, 136);
+	font-weight: bold;
+}
