@@ -4,7 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+    <!-- Meta Description -->
+    <head>
+        <meta name="description"
+            content="Emerging Technologies aims to bring future technologies to a tech-savvy audience, 
+            such that they are figuratively emerging into prominence from a background of nonexistence.">
+    </head>
+    
     <title>Emerging Tech</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -39,20 +46,18 @@
         </div>
 
         <!-- Social Icon  -->
-        <ul>
+        <!-- <ul>
             <a class="nav-link"><i class="fa fa-facebook"></i></a>
             <a class="nav-link"><i class="fa fa-linkedin"></i></a>
             <a class="nav-link"><i class="fa fa-twitter"></i></a>
-        </ul>
-
-
+        </ul> -->
 
         <!-- SignIn/SignUp -->
-        <div class="signin">
+        <!-- <div class="signin">
             <p><i class="fa fa-user"></i>
                 Login | Register
             </p>
-        </div>
+        </div> -->
 
 
         <!-- </div> -->
@@ -67,7 +72,7 @@
             <div class="container">
 
                 <!-- Navbar brand -->
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="http://emergingteck.com">
                     <h5>EMERGING <br> TECHNOLOGIES</h5>
                 </a>
 
@@ -83,7 +88,7 @@
                     <!-- Menus -->
                     <ul class="navbar-nav mr-auto smooth-scroll">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home
+                            <a class="nav-link" href="http://emergingteck.com">Home
                                 <span class="sr-only">(current)</span>
                             </a>
                         </li>
@@ -114,11 +119,11 @@
     </header>
 
     <!-- The social media icon bar -->
-    <div class="icon-bar">
+    <!-- <div class="icon-bar">
         <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
         <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
         <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-    </div>
+    </div> -->
 
 
     <!-- ############################## -->
@@ -223,14 +228,13 @@
     <!-- Footer -->
     <!--Copyright-->
     <footer class="page-footer unique-color-dark pt-4">
-        Copyright © 2020
-        <a href="#"> Alphabet Technologies </a>
-        Pvt Ltd. All Rights Reserved -
-        <span></span>
+        Copyright © 2020 Alphabet Technologies
+        Pvt Ltd. All Rights Reserved.
+        <!-- <span></span>
         <a href="#"> Privacy Policy </a>
         <span></span>
         <a href="#"> Site Terms </a>
-        </div>
+        </div> -->
         <!--/.Copyright-->
     </footer>
 
@@ -238,8 +242,8 @@
     <script>
         var dt = new Date();
         // document.getElementById("date").innerHTML = dt.toLocaleDateString();
-        document.getElementById("date").innerHTML = (("0" + dt.getDate()).slice(-2)) + "-" +
-            dt.toLocaleString('default', { month: 'short' }) + "-" + (dt.getFullYear());
+        document.getElementById("date").innerHTML = (("0" + dt.getDate()).slice(-2)) + ", " +
+            dt.toLocaleString('default', { month: 'long' }) + " " + (dt.getFullYear());
     </script>
 
 

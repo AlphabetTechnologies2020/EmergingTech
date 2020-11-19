@@ -44,6 +44,12 @@ h2 {
 	font-weight: 800;
 }
 
+h3 {
+	color: #186694;
+	font-size: 20px;
+	font-weight: 600;
+}
+
 .article {
 	padding: 0 5%;
 }

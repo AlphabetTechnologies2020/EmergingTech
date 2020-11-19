@@ -4,7 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+    <!-- Meta Description -->
+
+    <head>
+        <meta name="description" content="Emerging Technologies aims to bring future technologies to a tech-savvy audience, 
+            such that they are figuratively emerging into prominence from a background of nonexistence.">
+    </head>
+
     <title>Emerging Tech</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -39,20 +46,20 @@
         </div>
 
         <!-- Social Icon  -->
-        <ul>
+        <!-- <ul>
             <a class="nav-link"><i class="fa fa-facebook"></i></a>
             <a class="nav-link"><i class="fa fa-linkedin"></i></a>
             <a class="nav-link"><i class="fa fa-twitter"></i></a>
-        </ul>
+        </ul> -->
 
 
 
         <!-- SignIn/SignUp -->
-        <div class="signin">
+        <!-- <div class="signin">
             <p><i class="fa fa-user"></i>
                 Login | Register
             </p>
-        </div>
+        </div> -->
 
 
         <!-- </div> -->
@@ -66,8 +73,9 @@
             <div class="container">
 
                 <!-- Navbar brand -->
-                <a class="navbar-brand" href="https://alphabettechnologies2020.github.io/EmergingTech">
+                <a class="navbar-brand" href="http://emergingteck.com">
                     <h5>EMERGING <br> TECHNOLOGIES</h5>
+                    <!-- <img src="./images/mylogo.jpg" alt="logo" height="40px" width="160px"> -->
                 </a>
 
                 <!-- Collapse button -->
@@ -82,12 +90,12 @@
                     <!-- Menus -->
                     <ul class="navbar-nav mr-auto smooth-scroll">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home
+                            <a class="nav-link" href="http://emergingteck.com">Home
                                 <span class="sr-only">(current)</span>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Blogs</a>
+                        <li>
+                            <p class="nav-link">Blogs</p>
                         </li>
                         <li>
                             <p class="nav-link">About Us</p>
@@ -136,16 +144,51 @@
     </header>
 
     <!-- The social media icon bar -->
-    <div class="icon-bar">
+    <!-- <div class="icon-bar">
         <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
         <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
         <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-    </div>
+    </div> -->
 
     <!-- Blog Post -->
     <div class="background">
         <div class="container">
             <div class="blog-archive">
+
+
+                <div class="blog-post">
+                    <a href="cv-ep-1.html">
+                        <img src="./images/cv-ep-1.png" alt="cv" class="blog-post-img" />
+                        <div class="blog-post-meta">
+                            <span class="blog-post-category">CV</span>
+                            <h3 class="blog-post-title">Computer Vision</h3>
+                            <p class="blog-post-summary">
+                                Computer Vision, abbreviated as CV, is a field of study that seeks to develop techniques
+                                to help computers…
+                            </p>
+                            <a href="cv-ep-1.html">
+                                <div class="view-post-btn ">Continue Reading →</div>
+                            </a>
+                        </div>
+                    </a>
+                </div>
+                <div class="blog-post">
+                    <a href="er-ep-1.html">
+                        <img src="./images/er-ep-1.png" alt="cv"  />
+                        <div class="blog-post-meta">
+                            <span class="blog-post-category">ER</span>
+                            <h3 class="blog-post-title">Extended Reality (XR) A Progressive Innovation</h3>
+                            <p class="blog-post-summary">
+                                Nowadays Emerging technologies include a wide variety of technologies and technical
+                                innovations that results in…
+                            </p>
+                            <a href="er-ep-1.html">
+                                <div class="view-post-btn ">Continue Reading →</div>
+                            </a>
+                        </div>
+                    </a>
+                </div>
+
                 <div class="blog-post">
                     <a href="rpa.html">
                         <img src="./images/rpa.jpg" alt="rpa" class="blog-post-img" />
@@ -220,14 +263,13 @@
     <!-- Footer -->
     <!--Copyright-->
     <footer class="page-footer unique-color-dark pt-4">
-        Copyright © 2020
-        <a href="#"> Alphabet Technologies </a>
-        Pvt Ltd. All Rights Reserved -
-        <span></span>
+        Copyright © 2020 Alphabet Technologies
+        Pvt Ltd. All Rights Reserved
+        <!-- <span></span>
         <a href="#"> Privacy Policy </a>
         <span></span>
         <a href="#"> Site Terms </a>
-        </div>
+        </div> -->
         <!--/.Copyright-->
     </footer>
 
@@ -235,8 +277,8 @@
     <script>
         var dt = new Date();
         // document.getElementById("date").innerHTML = dt.toLocaleDateString();
-        document.getElementById("date").innerHTML = (("0" + dt.getDate()).slice(-2)) + "-" +
-            dt.toLocaleString('default', { month: 'short' }) + "-" + (dt.getFullYear());
+        document.getElementById("date").innerHTML = (("0" + dt.getDate()).slice(-2)) + ", " +
+            dt.toLocaleString('default', { month: 'long' }) + " " + (dt.getFullYear());
     </script>
 
 
