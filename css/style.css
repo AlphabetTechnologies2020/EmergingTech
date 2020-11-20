@@ -73,6 +73,11 @@ body{
   padding: 0!important;
 }
 
+.logo{
+	border-radius: 50%;
+	margin-left: 10px;
+}
+
 .mr-auto, .mx-auto{
   margin-left: auto!important;
 }
