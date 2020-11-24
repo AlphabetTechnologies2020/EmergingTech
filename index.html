@@ -13,6 +13,9 @@
     <meta property="og:image:url" itemprop="image" content="http://emergingteck.com/images/og-image.png" />
     <meta property="twitter:image" itemprop="image" content="http://emergingteck.com/images/og-image.png" />
 
+    <!-- Top Icon -->
+    <link rel="icon" href="http://emergingteck.com/images/logo.png" />
+
     <!-- Website Title -->
     <title>Emerging Tech</title>
 
@@ -126,24 +129,40 @@
                 <div class="row d-flex justify-content-center text-center">
 
                     <div class="col-md-12">
-
                         <!-- Heading -->
-                        <h3 class="pt-5 mb-2" style="color: white; font-size: 54px;">
+                        <h3 style="color: white; font-size: 48px;">
                             Emerging Technologies</h3>
 
                         <!-- Divider -->
                         <hr class="hr-light">
 
                         <!-- Description -->
-                        <h4 class="white-text my-4">Exploring Future of Technology</h4>
+                        <h4 class="white-text">Exploring Future of Technology</h4>
+                    </div>
+
+                    <!-- Search Box -->
+                    <div class="box">
+                        <div class="search-bar">
+                            <span class="icon"><i class="fa fa-search"></i></span>
+                            <input type="text" id="search" placeholder="Search blogs.." onkeyup="searchBlog()" />
+                            <ul class="blog" id="menu">
+                                <li><a href="Blog/quantum-computing-ep-1.html">What is Quantum Computing (Episode-1)</a>
+                                </li>
+                                <li><a href="Blog/edge-computing-ep-1.html">What is Edge Computing (Episode-1)</a></li>
+                                <li><a href="Blog/computer-vision-ep-1.html">Computer Vision (Episode-1)</a></li>
+                                <li><a href="Blog/er-ep-1.html">Extended Reality (XR) A Progressive Innovation
+                                        (Episode-1)</a></li>
+                                <li><a href="Blog/rpa.html">How RPA Emerges To Automation</a></li>
+                                <li><a href="Blog/iot.html">IOT A Future of Technology</a></li>
+                                <li><a href="Blog/cc.html">What is Cloud Computing and why it is necessary?</a></li>
+                                <li><a href="Blog/intelligent-app.html">How Intelligent Apps Contributes Towards
+                                        Promising Future?</a></li>
+                            </ul>
+                        </div>
                     </div>
 
                 </div>
-
-            </div>
-
-        </div>
-        <!--/.Navbar-->
+                <!--/.Navbar-->
     </header>
 
     <!-- The social media icon bar -->
@@ -294,12 +313,45 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <hr style="border-top: 3px solid lightblue;">
+
+    <div class="contact-form">
+        <h1 class="contact-form-left">
+            We would like to hear from you for improvement as a continuous process
+        </h1>
+
+        <div class="contact-form-right">
+            <form method="post" action="contact.php">
+                <div class="col-md-12">
+                    <h1 class="title">Contact Us</h1>
+
+                    <!-- Email Confirmation Success -->
+                    <p class="confirmation send-success"><span class="ti-check-box"></span>Email sent
+                        successfully.</p>
+
+                    <!-- Email Confirmation Error -->
+                    <p class="confirmation send-error"><span class="ti-alert"></span>There is a problem
+                        sending email ...</p>
+
+                    <input class="form-control" type="text" name="fname" placeholder="First Name" required="required">
+                    <input class="form-control" type="text" name="lname" placeholder="First Name">
+                    <input class="form-control" type="email" name="email" placeholder="Email" required="required">
+                    <textarea class="form-control" name="message" rows="4" placeholder="Message"
+                        required="required"></textarea>
+                    <button type="submit" class="submit-btn" data-wow-duration="1s" data-wow-delay=".5s">Submit</button>
+                </div>
+            </form>
+
+        </div>
 
     </div>
 
     <!-- Footer -->
     <!--Copyright-->
     <footer class="page-footer unique-color-dark pt-4">
+
         Copyright © 2020 Alphabet Technologies
         Pvt Ltd. All Rights Reserved
         <!-- <span></span>
@@ -330,6 +382,8 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
 
+    <!-- search-box -->
+    <script src="js/search-box.js"></script>
 </body>
 
 </html>
