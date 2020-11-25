@@ -330,6 +330,7 @@ footer a:hover{
   }
 
   .submit-btn{
+	color: white;
 	  margin-top: 10px;
 	  margin-bottom: 10px;
     font-size: 0.9em;
@@ -339,7 +340,7 @@ footer a:hover{
     border-radius: 6px;
 }
 
-.submit-btn:hover{
-    color: blue;
+.submit-btn:hover{  
     background-color:  rgb(113, 155, 197);
-    font-weight: bolder;
+	font-weight: bolder;
+}

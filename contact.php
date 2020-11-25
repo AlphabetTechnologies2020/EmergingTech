@@ -11,7 +11,7 @@ if(empty($fname) || empty($email) || empty($message))
 else
 <!-- info@emergingteck.com -->
 {
-    mail("talhahussain570@gmail.com", "Emerging Tech Message", $message, "from: $fname + $lname <$email>");
+    mail("info@emergingteck.com", "Emerging Tech Message", $message, "from: $fname + $lname <$email>");
     echo "<script type='text/javascript'>alert("Your message sent successfully")<script>";
     window.history.log(-1);
 }
