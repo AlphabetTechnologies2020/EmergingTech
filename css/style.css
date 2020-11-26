@@ -259,22 +259,6 @@ img, embed, object, video {
 	text-decoration: underline;
 }
 
-/* Footer */
-footer{
-	height: 60px !important;
-	padding-left: 40px;
-}
-
-footer > span{
-	border-right: 2px solid;
-	margin: 0 5px 0 3px;
-}
-
-footer a:hover{
-	color: rgb(12, 88, 136);
-	font-weight: bold;
-}
-
 /* Contact Form */
 .contact-form{
 	width: 100%;
@@ -343,3 +327,20 @@ footer a:hover{
     background-color:  rgb(113, 155, 197);
 	font-weight: bolder;
 }
+
+/* Footer */
+footer{
+	height: 60px !important;
+	padding-left: 40px;
+}
+
+footer > span{
+	border-right: 2px solid;
+	margin: 0 5px 0 3px;
+}
+
+footer a:hover{
+	color: rgb(12, 88, 136);
+	font-weight: bold;
+}
+
