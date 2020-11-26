@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Meta Description -->
+    <!-- Meta Description for Social Media -->
     <meta property="og:url" content="http://emergingteck.com/" />
     <meta property="og:title" content="Emerging Technologies" />
     <meta property="og:description" content="Emerging Technologies aims to bring future Technologies." />
@@ -16,8 +16,9 @@
     <!-- Top Icon -->
     <link rel="icon" href="http://emergingteck.com/images/logo.png" />
 
-    <!-- Website Title -->
+    <!-- Website Title and Description -->
     <title>Emerging Tech</title>
+    <meta name="description" content="Emerging Technologies aims to bring future Technologies." />
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -123,7 +124,7 @@
         </nav>
 
         <!-- Landing Image -->
-        <div id="intro">
+        <div id="intro" onclick="nosearch()">
             <div class="container-fluid d-flex align-items-center justify-content-center h-100">
 
                 <div class="row d-flex justify-content-center text-center">
@@ -144,7 +145,7 @@
                     <div class="box">
                         <div class="search-bar">
                             <span class="icon"><i class="fa fa-search"></i></span>
-                            <input type="text" id="search" placeholder="Search blogs.." onkeyup="searchBlog()" />
+                            <input type="text" id="search" placeholder="Search blogs.." onkeyup="searchBlog()"/>
                             <ul class="blog" id="menu">
                                 <li><a href="Blog/quantum-computing-ep-1.html">What is Quantum Computing (Episode-1)</a>
                                 </li>
@@ -160,6 +161,26 @@
                             </ul>
                         </div>
                     </div>
+                    <!-- <div class="wrapper">
+                        <div class="search-input">
+                            <a href="" target="_blank" hidden></a>
+                            <input type="text" placeholder="Type to search..">
+                            <div class="autocom-box">
+                                <li><a href="Blog/quantum-computing-ep-1.html">What is Quantum Computing (Episode-1)</a>
+                                </li>
+                                <li><a href="Blog/edge-computing-ep-1.html">What is Edge Computing (Episode-1)</a></li>
+                                <li><a href="Blog/computer-vision-ep-1.html">Computer Vision (Episode-1)</a></li>
+                                <li><a href="Blog/er-ep-1.html">Extended Reality (XR) A Progressive Innovation
+                                        (Episode-1)</a></li>
+                                <li><a href="Blog/rpa.html">How RPA Emerges To Automation</a></li>
+                                <li><a href="Blog/iot.html">IOT A Future of Technology</a></li>
+                                <li><a href="Blog/cc.html">What is Cloud Computing and why it is necessary?</a></li>
+                                <li><a href="Blog/intelligent-app.html">How Intelligent Apps Contributes Towards
+                                        Promising Future?</a></li>
+                            </div>
+                            <div class="icon"><i class="fas fa-search"></i></div>
+                        </div>
+                    </div> -->
 
                 </div>
                 <!--/.Navbar-->
@@ -340,7 +361,8 @@
                     <input class="form-control" type="email" name="email" placeholder="Email" required="required">
                     <textarea class="form-control" name="message" rows="4" placeholder="Message"
                         required="required"></textarea>
-                    <button type="submit" name="btn-send" class="submit-btn" style="color: white;" data-wow-duration="1s" data-wow-delay=".5s">Submit</button>
+                    <button type="submit" name="btn-send" class="submit-btn" style="color: white;"
+                        data-wow-duration="1s" data-wow-delay=".5s">Submit</button>
                 </div>
             </form>
 
