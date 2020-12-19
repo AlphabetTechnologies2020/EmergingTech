@@ -20,6 +20,9 @@
     <title>Emerging Tech</title>
     <meta name="description" content="Emerging Technologies aims to bring future Technologies." />
 
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
@@ -39,6 +42,9 @@
 
         gtag('config', 'UA-179563087-6');
     </script>
+
+    <!-- Search -->
+    <script src="e-search.js"></script>
 
 </head>
 
@@ -145,14 +151,18 @@
                     <div class="box">
                         <div class="search-bar">
                             <span class="icon"><i class="fa fa-search"></i></span>
-                            <input type="text" id="search" placeholder="Search blogs.." onkeyup="searchBlog()" />
+                            <input type="search" class="search-item" id="search" placeholder="Search blogs.."
+                                onkeyup="searchBlog()" />
                             <ul class="blog" id="menu">
+                                <li><a href="Blog/extended-reality(AR)-ep-2.html">Augmented Reality (AR) (Extended Reality (Episode-2))</a></li>
+                                <li><a href="Blog/blockchain-ep-1.html">What is Blockchain, Its concepts, and how it
+                                        works(Episode-1)</a></li>
                                 <li><a href="Blog/quantum-computing-ep-1.html">What is Quantum Computing (Episode-1)</a>
                                 </li>
                                 <li><a href="Blog/edge-computing-ep-1.html">What is Edge Computing (Episode-1)</a></li>
                                 <li><a href="Blog/computer-vision-ep-1.html">Computer Vision (Episode-1)</a></li>
-                                <li><a href="Blog/er-ep-1.html">Extended Reality (XR) A Progressive Innovation
-                                        (Episode-1)</a></li>
+                                <li><a href="Blog/er-ep-1.html">Extended Reality (XR) A Progressive
+                                        Innovation(Episode-1)</a></li>
                                 <li><a href="Blog/rpa.html">How RPA Emerges To Automation</a></li>
                                 <li><a href="Blog/iot.html">IOT A Future of Technology</a></li>
                                 <li><a href="Blog/cc.html">What is Cloud Computing and why it is necessary?</a></li>
@@ -177,11 +187,49 @@
         <div class="container">
             <div class="blog-archive">
 
-                <div class="blog-post">
+                <div class="blog-post"
+                    data-search="augmented reality (AR) an interactive experience ar (extended reality xr (episode-2))">
+                    <a href="Blog/extended-reality(AR)-ep-2.html">
+                        <img src="./images/augmented-reality.png" alt="Augmented-Reality" class="blog-post-img" />
+                        <div class="blog-post-meta">
+                            <span class="blog-post-category">XR(AR)</span>
+                            <h3 class="blog-post-title">Augmented Reality (AR) An Interactive Experience <br> (Extended
+                                Reality (Episode-2))
+                            </h3>
+                            <p class="blog-post-summary">
+                                To understand that, Augmented Reality is really an Interactive experience let’s move on
+                                and understand…
+                            </p>
+                            <a href="Blog/extended-reality(AR)-ep-2.html">
+                                <div class="view-post-btn ">Continue Reading →</div>
+                            </a>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="blog-post" data-search="what is blockchain, its concepts, and how it works bc (episode-1) ">
+                    <a href="Blog/blockchain-ep-1.html">
+                        <img src="./images/blockchain.jpg" alt="Blockchain" class="blog-post-img" />
+                        <div class="blog-post-meta">
+                            <span class="blog-post-category">BC</span>
+                            <h3 class="blog-post-title">What is Blockchain, Its concepts, and how it works(Episode-1)
+                            </h3>
+                            <p class="blog-post-summary">
+                                A blockchain is a computer file or database(a collection of data stored on a computer
+                                system) that in…
+                            </p>
+                            <a href="Blog/blockchain-ep-1.html">
+                                <div class="view-post-btn ">Continue Reading →</div>
+                            </a>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="blog-post" data-search="What is quantum computing qc (episode-1) ">
                     <a href="Blog/quantum-computing-ep-1.html">
                         <img src="./images/quantum-computing.jpg" alt="Quantum Computing" class="blog-post-img" />
                         <div class="blog-post-meta">
-                            <span class="blog-post-category">Quantum Computing</span>
+                            <span class="blog-post-category">QC</span>
                             <h3 class="blog-post-title">What is Quantum Computing (Episode-1)</h3>
                             <p class="blog-post-summary">
                                 If we are getting information about certain technology some questions arise in our mind,
@@ -194,11 +242,11 @@
                     </a>
                 </div>
 
-                <div class="blog-post">
+                <div class="blog-post" data-search="what is edge computing ec (episode-1)">
                     <a href="Blog/edge-computing-ep-1.html">
                         <img src="./images/edgecomputing.jpg" alt="Edge Computing" class="blog-post-img" />
                         <div class="blog-post-meta">
-                            <span class="blog-post-category">Edge Computing</span>
+                            <span class="blog-post-category">EC</span>
                             <h3 class="blog-post-title">What is Edge Computing (Episode-1)</h3>
                             <p class="blog-post-summary">
                                 In the world of technology and rapid advancement, data become more crucial day by day
@@ -211,7 +259,7 @@
                     </a>
                 </div>
 
-                <div class="blog-post">
+                <div class="blog-post" data-search="computer vision cv (episode-1)">
                     <a href="Blog/computer-vision-ep-1.html">
                         <img src="./images/cv-ep-1.png" alt="cv" class="blog-post-img" />
                         <div class="blog-post-meta">
@@ -228,11 +276,11 @@
                     </a>
                 </div>
 
-                <div class="blog-post">
+                <div class="blog-post" data-search="extended reality (XR) a progressive innovation xr (episode-1)">
                     <a href="Blog/er-ep-1.html">
                         <img src="./images/er-ep-1.png" alt="cv" />
                         <div class="blog-post-meta">
-                            <span class="blog-post-category">ER</span>
+                            <span class="blog-post-category">XR</span>
                             <h3 class="blog-post-title">Extended Reality (XR) A Progressive Innovation (Episode-1)</h3>
                             <p class="blog-post-summary">
                                 Nowadays Emerging technologies include a wide variety of technologies and technical
@@ -245,7 +293,7 @@
                     </a>
                 </div>
 
-                <div class="blog-post">
+                <div class="blog-post" data-search="how RPA emerges to automation rpa">
                     <a href="Blog/rpa.html">
                         <img src="./images/rpa.jpg" alt="rpa" class="blog-post-img" />
                         <div class="blog-post-meta">
@@ -262,7 +310,7 @@
                     </a>
                 </div>
 
-                <div class="blog-post">
+                <div class="blog-post" data-search="IOT a future of technology iot internet of things">
                     <a href="Blog/iot.html">
                         <img src="./images/iot.png" alt="iot" class="blog-post-img" />
                         <div class="blog-post-meta">
@@ -279,11 +327,11 @@
                     </a>
                 </div>
 
-                <div class="blog-post">
+                <div class="blog-post" data-search="what is cloud computing and why it is necessary? cc">
                     <a href="Blog/cc.html">
                         <img src="./images/cc.png" alt="CC" class="blog-post-img" />
                         <div class="blog-post-meta">
-                            <span class="blog-post-category">Cloud Computing</span>
+                            <span class="blog-post-category">CC</span>
                             <h3 class="blog-post-title">What is Cloud Computing and why it is necessary?</h3>
                             <p class="blog-post-summary">
                                 Cloud computing is a general term used for anything that involves delivering hosted
@@ -295,11 +343,11 @@
                         </div>
                     </a>
                 </div>
-                <div class="blog-post">
+                <div class="blog-post" data-search="how intelligent apps contributes towards promising future? IA ia">
                     <a href="Blog/intelligent-app.html">
                         <img src="./images/intelligent-app.jpg" alt="ia" class="blog-post-img" />
                         <div class="blog-post-meta">
-                            <span class="blog-post-category">Intelligent App</span>
+                            <span class="blog-post-category">IA</span>
                             <h3 class="blog-post-title">How Intelligent Apps Contributes Towards Promising Future?</h3>
                             <p class="blog-post-summary">
                                 It is not wrong when I say that life is incomplete without smartphones. Just imagine the
@@ -341,7 +389,7 @@
                         sending email ...</p> -->
 
                     <input class="form-control" type="text" name="fname" placeholder="First Name" required="required">
-                    <input class="form-control" type="text" name="lname" placeholder="First Name">
+                    <input class="form-control" type="text" name="lname" placeholder="Last Name">
                     <input class="form-control" type="email" name="email" placeholder="Email" required="required">
                     <textarea class="form-control" name="message" rows="4" placeholder="Message"
                         required="required"></textarea>
@@ -376,11 +424,15 @@
             dt.toLocaleString('default', { month: 'long' }) + " " + (dt.getFullYear());
     </script>
 
+    <!-- Custom Search Script -->
+    <script type="text/javascript">
+        $('.search-item').search(function () {
 
+            //execute after done typing.
 
+        });
+    </script>
 
-    <!-- JQuery -->
-    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <!-- Bootstrap tooltips -->
     <script type="text/javascript" src="js/popper.min.js"></script>
     <!-- Bootstrap core JavaScript -->
@@ -390,6 +442,8 @@
 
     <!-- search-box -->
     <script src="js/search-box.js"></script>
+
+
 </body>
 
 </html>
